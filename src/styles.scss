@@ -1,0 +1,14 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+mat-icon {
+  height: unset !important;
+  width: 64px !important;
+  aspect-ratio: 1 !important;
+}

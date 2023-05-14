@@ -1,0 +1,33 @@
+<div>
+  <button (click)="addTop()"
+          [disabled]="list.length>=catalog.length"
+          color="primary"
+          mat-flat-button>
+    Add to Top
+  </button>
+
+  <button (click)="addRandom()"
+          [disabled]="list.length>=catalog.length"
+          color="primary"
+          mat-button>
+    Add to Middle
+  </button>
+
+  <button (click)="shuffleList()"
+          color="primary"
+          mat-button>
+    Shuffle List
+  </button>
+</div>
+
+<mat-list [@listAnimation]="list.length" class="games-list">
+  <mat-list-item
+    *ngFor="let item of list; trackBy: trackGameId"
+    class="game-in-list"
+  >
+    <button (click)="remove(item)" color="warn" mat-button>
+      <mat-icon svgIcon="delete-circle"></mat-icon>
+    </button>
+    {{item.label}}
+  </mat-list-item>
+</mat-list>

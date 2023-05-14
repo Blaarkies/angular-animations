@@ -1,0 +1,14 @@
+
+.animate-fade-in-and-out {
+  animation: fadeInAndOut 2000ms;
+}
+
+@keyframes fadeInAndOut {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+

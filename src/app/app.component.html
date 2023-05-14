@@ -1,0 +1,12 @@
+<mat-nav-list>
+  <a mat-list-item
+     *ngFor="let link of links"
+     [href]="link.path"
+  >
+    {{ link.title }}
+  </a>
+</mat-nav-list>
+
+<div class="router-container">
+  <router-outlet></router-outlet>
+</div>

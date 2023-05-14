@@ -1,0 +1,22 @@
+
+:host {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.group-column {
+  margin: 15px 0;
+  display: grid;
+
+  mat-radio-button {
+    margin: 5px;
+  }
+}
+
+mat-icon {
+  stroke: black;
+  stroke-width: .5;
+}
+

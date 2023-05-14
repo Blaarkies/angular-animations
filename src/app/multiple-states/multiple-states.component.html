@@ -1,0 +1,16 @@
+<div>
+  <label id="group-label">Current State</label>
+  <mat-radio-group
+    [(ngModel)]="selected"
+    aria-labelledby="group-label"
+    class="group-column">
+    <mat-radio-button
+      *ngFor="let rb of radioButtons"
+      [value]="rb.id">
+      {{rb.label}}
+    </mat-radio-button>
+  </mat-radio-group>
+</div>
+
+<mat-icon [@multiState]="selected"
+          svgIcon="cloud-sync"></mat-icon>
